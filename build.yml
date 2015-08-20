@@ -1,0 +1,33 @@
+---
+sdkversion: 5.1.0
+name: RhoMobileApplication2
+version: '1.0'
+vendor: rhomobile
+build: debug
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator8.2
+  provisionprofile: ''
+  codesignidentity: iPhone Developer
+  entitlements: ''
+  BundleIdentifier: com.rhomobile.rhomobileapplication2
+  BundleURLScheme: rhomobileapplication2
+  production:
+    ipa_itunesartwork_image: ./production/iTunesArtwork.png
+wp8:
+  productid: cae31051-2930-0133-321f-00ff10b4b209
+android:
+  version: 2.3.3
+  logcatFilter: APP:I StrictMode:I DEBUG:I *:E
+wm: ''
+win32:
+  deployqt: '1'
+  deploymsvc: '1'
+extensions:
+- rhoconnect-client
+rhobundle:
+  exclude_items:
+  - thumb.db
+app_type: rhoelements
+capabilities: []
